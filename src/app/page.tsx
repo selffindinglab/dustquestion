@@ -9,7 +9,7 @@ import { FaInstagram } from 'react-icons/fa';
 const explanations: { [key: string]: string } = {
     '1': '당신은 지적이고 분석적인 먼지입니다.',
     '2': '당신은 사랑많고 친밀한 먼지입니다.',
-    '3': '당신은 조용하고 내성적인 먼지입니다.',
+    '3': '당신은 음식을 사랑하는 본능적인 먼지입니다',
 };
 
 const resultImages: { [key: string]: string[] } = {
@@ -89,7 +89,7 @@ export default function DustQuestionPage() {
                                 🥳 당신의 먼지 유형은 <span className="text-pink-600">{result}번</span> 이에요!
                             </p>
 
-                            <p className="text-base sm:text-lg text-gray-700 italic">"{explanations[result]}"</p>
+                            <p className="text-base sm:text-lg text-gray-700 italic">{explanations[result]}</p>
 
                             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                                 {resultImages[result]?.map((src, idx) => (
